@@ -18,9 +18,6 @@ function App() {
     <div className="App">
       {Userdata && <User_card data={Userdata} />}
 
-
-
-
     </div>
   );
 }
