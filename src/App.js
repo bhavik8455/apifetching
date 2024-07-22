@@ -13,10 +13,19 @@ function App() {
   useEffect(() => {
     Usercard().then((user) => SetUserdata(user.results[0]));
   }, []);
+
+  const Refresh = () => {
+    Usercard().then((user) => SetUserdata(user.results[0]));
+
+  };
   return (
 
     <div className="App">
-      {Userdata && <User_card data={Userdata} />}
+      <span className='app'>
+        {Userdata && <User_card data={Userdata} />}
+
+        <button className="btn" onClick={Refresh}>Refresh Here</button>
+      </span>
 
     </div>
   );

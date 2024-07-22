@@ -1,6 +1,7 @@
 import React from "react";
 
 const User_card = (props) => {
+
     console.log(props.data);
 
     return (
